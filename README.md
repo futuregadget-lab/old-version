@@ -20,7 +20,9 @@ original;
 - The *top* and the *about site* pages contains some additional phrases to
 mention this repository, as so the license and copyright notices;
 - This version contains i18n too, so I added a language selector in the
-ending of the menu bar.
+ending of the menu bar;
+- The blinking algorithm is broken in the original version, so I
+fixed using CSS animations.
 
 ## Build Setup
 
