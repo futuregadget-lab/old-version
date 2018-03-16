@@ -31,6 +31,14 @@
     <p>This HOMEPAGE is compatible with deloode chrome ver.2.0 and up.</p>
     <p>Recommended resolution is 1600x1200 pixels.</p>
     <p>&nbsp;</p>
+    <p>
+      This is an modified version of <a href="http://futuregadget-lab.us/" target="_blank">Future Gadget Lab</a> website.
+    </p>
+    <p>
+      Coded by <a href="https://github.com/alessandrojean/mirai-gadget-lab" target="_blank">alessandrojean</a>
+      using <a href="https://vuejs.org/" target="_blank">Vue.js</a>.
+    </p>
+    <p>&nbsp;</p>
     <p><img src="../assets/1f.jpg" alt="burankankoubou" height="100" width="400"></p>
   </div>
 </template>
