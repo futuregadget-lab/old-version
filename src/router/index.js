@@ -9,6 +9,8 @@ import TheAboutLabmenPage from '@/components/TheAboutPage/TheAboutLabmenPage'
 import TheAboutStrengthPage from '@/components/TheAboutPage/TheAboutStrengthPage'
 import TheAboutDisclaimerPage from '@/components/TheAboutPage/TheAboutDisclaimerPage'
 
+import TheGadgetsPage from '@/components/TheGadgetsPage'
+
 import TheBBSPage from '@/components/TheBBSPage'
 import TheBBSPass from '@/components/TheBBSPage/TheBBSPass'
 
@@ -42,8 +44,11 @@ export default new Router({
       path: '/about/disclaimer',
       name: 'AboutDisclaimerPage',
       component: TheAboutDisclaimerPage
-    },
-    {
+    }, {
+      path: '/gadgets',
+      name: 'GadgetsPage',
+      component: TheGadgetsPage
+    }, {
       path: '/bbs',
       name: 'TheBBSPage',
       component: TheBBSPage
