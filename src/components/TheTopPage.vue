@@ -47,7 +47,7 @@ export default {
 <style scoped>
 .top-page {
   font-size: x-small;
-  background-image: url(../assets/haikei.jpg);
+  background-image: url('../assets/haikei.jpg');
   background-repeat: no-repeat;
   background-position: top center;
 }
