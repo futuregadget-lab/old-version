@@ -12,7 +12,7 @@
     </p>
     <p class="left">
       Inquiries<br>
-      ・Feedback and comments for this site please come to Chiyoda-ku, Tokyo Kuramaebashi-dori crossing Tsumakoisaka alleyway. 
+      ・Feedback and comments for this site please come to Chiyoda-ku, Tokyo Kuramaebashi-dori crossing Tsumakoisaka alleyway.
       There is multi-tenant building eight-story about Built '40 name "Ohiyama", there at second story.
     </p>
     <p>&nbsp;</p>
