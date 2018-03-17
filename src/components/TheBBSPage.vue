@@ -1,10 +1,10 @@
 <template>
   <div class="bbs-page">
-    <p>Phoenix BBS</p>
-    <p>(Annex of Future Gadget Laboratory)</p>
+    <p v-t="'bbsPage.title'"></p>
+    <p v-t="'bbsPage.subtitle'"></p>
     <hr>
     <!-- eslint-disable-next-line -->
-    <p>[<router-link to="/">Return the Top</router-link>]　[<router-link to="/bbs/pass">Admin</router-link>]</p>
+    <p>[<router-link to="/" v-t="'bbsPage.returnTop'"></router-link>]　[<router-link to="/bbs/pass" v-t="'bbsPage.admin'"></router-link>]</p>
     <hr>
     <TheBBSForm></TheBBSForm>
     <hr>

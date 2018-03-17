@@ -1,8 +1,8 @@
 # Mirai Gadget Lab
 
-![Travis](https://img.shields.io/travis/alessandrojean/mirai-gadget-lab.svg?style=flat-square)
+![Travis][travis]
 
-An attempt to rebuild the website of Mirai Gadget Lab from Steins;Gate using Vue.js.
+An attempt to rebuild the website of [Mirai Gadget Lab] from Steins;Gate using Vue.js.
 
 > This website was created originally as part of the marketing campaing for the
 > anime adaptation of Steins;Gate. The page was written by Okabe Rintarou and
@@ -12,7 +12,11 @@ An attempt to rebuild the website of Mirai Gadget Lab from Steins;Gate using Vue
 > 
 > Adapted from http://steins-gate.wikia.com/wiki/Future_Gadgets_Lab_(Web_Site)
 
-This version it's available online [here](https://alessandrojean.github.io/mirai-gadget-lab/).
+This version is available online [here].
+
+[Mirai Gadget Lab]: http://futuregadget-lab.us/
+[here]: https://alessandrojean.github.io/mirai-gadget-lab/
+[travis]: https://img.shields.io/travis/alessandrojean/mirai-gadget-lab.svg?style=flat-square
 
 ## Differences
 
@@ -22,7 +26,7 @@ original;
 - The *top* and the *about site* pages contains some additional phrases to
 mention this repository, as so the license and copyright notices;
 - This version contains i18n too, so I added a language selector in the
-ending of the menu bar;
+ending of the *top* page;
 - The blinking algorithm is broken in the original version, so I
 fixed using CSS animations.
 

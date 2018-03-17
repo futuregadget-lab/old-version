@@ -1,8 +1,20 @@
 <template>
   <div class="menu-bar">
-    <p v-for="page in pages" :key="page.path">
-      <router-link :to="page.path">{{ page.name }}</router-link>
-      <span class="label" v-if="page.label">({{ page.label }})</span>
+    <p>
+      <router-link to="/" v-t="'menu.topPage'"></router-link>
+    </p>
+    <p>
+      <router-link to="/about" v-t="'menu.aboutLab'"></router-link>
+    </p>
+    <p>
+      <router-link to="/gadgets" v-t="'menu.futureGadget'"></router-link>
+      <span class="label">({{ $t('menu.update') }}!!)</span>
+    </p>
+    <p>
+      <router-link to="/bbs">Phoenix BBS</router-link>
+    </p>
+    <p>
+      <router-link to="/link">link</router-link>
     </p>
   </div>
 </template>
@@ -11,15 +23,7 @@
 export default {
   name: 'TheMenuBar',
   data () {
-    return {
-      pages: [
-        { name: 'Top Page', path: '/' },
-        { name: 'About Lab', path: '/about' },
-        { name: 'Future Gadget', path: '/gadgets', label: 'updeto!!' },
-        { name: 'Phoenix BBS', path: '/bbs' },
-        { name: 'link', path: '/link' }
-      ]
-    }
+    return {}
   }
 }
 </script>

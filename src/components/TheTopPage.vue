@@ -2,43 +2,41 @@
   <div class="top-page">
     <p><img src="../assets/title.jpg" alt="" height="70" width="547"></p>
     <p class="title"><strong>HOMEPAGE</strong></p>
-    <p>You're the <span class="counter">0000225485558TH</span> visitor to this site.</p>
-    <p class="welcome">Welcome to the Future Gadget Laboratory Homepage!</p>
+    <i18n path="topPage.visitor" tag="p">
+      <span place="counter" class="counter" v-t="{ path: 'topPage.counter', args: { counter: '0000225485558' } }"></span>
+    </i18n>
+    <p class="welcome" v-t="'topPage.welcome'"></p>
     <p>&nbsp;</p>
-    <p class="blink">Breaking News</p>
-    <p class="blink">Stage 1 of expansion of the western!!!</p>
+    <p class="blink" v-t="'topPage.breakingNews'"></p>
+    <p class="blink" v-t="'topPage.stageOne'"></p>
     <p></p>
-    <p class="update"><router-link to="/gadgets">Future Gadget update!</router-link></p>
+    <p class="update"><router-link to="/gadgets" v-t="'topPage.futureGadget'"></router-link></p>
 
     <table border="1">
       <tbody>
         <tr>
-          <td>
-            <p>
-              This Paige of English is mad of efforts to expansion into west, as a
-              making into perfect Engligh by glorious Super Hacka with a helping of
-              machine translation software
-            </p>
-            <p>
-              <a href="http://futuregadget-lab.com/" target="_blank">click here for main site</a>
-            </p>
-          </td>
+          <td v-html="$t('topPage.about')"></td>
         </tr>
       </tbody>
     </table>
 
     <p>&nbsp;</p>
-    <p>This HOMEPAGE is compatible with deloode chrome ver.2.0 and up.</p>
-    <p>Recommended resolution is 1600x1200 pixels.</p>
+    <p v-t="'topPage.compatibility'"></p>
+    <p v-t="'topPage.resolution'"></p>
     <p>&nbsp;</p>
-    <p>
-      This is an modified version of <a href="http://futuregadget-lab.us/" target="_blank">Future Gadget Lab</a> website.
-    </p>
-    <p>
-      Coded by <a href="https://github.com/alessandrojean/mirai-gadget-lab" target="_blank">alessandrojean</a>
-      using <a href="https://vuejs.org/" target="_blank">Vue.js</a>.
-    </p>
+    <i18n path="topPage.notice" tag="p">
+      <a place="site" href="http://futuregadget-lab.us/" target="_blank">Future Gadget Lab</a>
+    </i18n>
+    <i18n path="topPage.credits" tag="p">
+      <a place="name" href="https://github.com/alessandrojean/mirai-gadget-lab" target="_blank">alessandrojean</a>
+      <a place="vuejs" href="https://vuejs.org/" target="_blank">Vue.js</a>
+    </i18n>
     <p>&nbsp;</p>
+    <i18n path="topPage.language" tag="p">
+      <select v-model="selectedLanguage" @change="changeLanguage">
+        <option v-for="lang in languages" :key="lang.label" :value="lang.label">{{ lang.name }}</option>
+      </select>
+    </i18n>
     <p><img src="../assets/1f.jpg" alt="burankankoubou" height="100" width="400"></p>
   </div>
 </template>
@@ -47,7 +45,20 @@
 export default {
   name: 'TheTopPage',
   data () {
-    return {}
+    return {
+      languages: [
+        { name: 'English', label: 'en' },
+        { name: '日本語', label: 'jp' }
+      ],
+      selectedLanguage: 'en'
+    }
+  },
+  methods: {
+    changeLanguage (event) {
+      this.$i18n.locale = this.selectedLanguage
+      document.querySelector('html').setAttribute('lang', this.selectedLanguage)
+      document.title = this.$t('general.title')
+    }
   }
 }
 </script>

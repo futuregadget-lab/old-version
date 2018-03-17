@@ -1,24 +1,18 @@
 <template>
   <div class="strength-page">
     <p>give and take</p>
-    <p class="title"><strong>Want the strength?</strong></p>
-    <p>~It defeat the enemy soon. It consume the self the death soon.~</p>
+    <p class="title"><strong v-t="'aboutPage.strengthPage.title'"></strong></p>
+    <p v-t="'aboutPage.strengthPage.subtitle'"></p>
     <p>&nbsp;</p>
-    <p>
-      <br>
-      In the Future Gadget Laboratory, together with repeat inventions researching,<br>
-      recruiting always of researchers for fight the final crusade which one day face world.<br>
-      ESP-compatible persons should make a coming to the laboratory with posthaste. This Hououin Kyouma shall make a giving of blood covenant.<br>
-      Accepting the admission of followings:
-    </p>
+    <p v-html="$t('aboutPage.strengthPage.description')"></p>
     <ul>
-      <li>mad scientist</li>
-      <li>person who is making a running from Organization</li>
-      <li>person who can do the cosplay (man and/or woman)</li>
-      <li>loli girl must have big chests</li>
+      <li v-t="'aboutPage.strengthPage.madScientist'"></li>
+      <li v-t="'aboutPage.strengthPage.runningFrom'"></li>
+      <li v-t="'aboutPage.strengthPage.cosplay'"></li>
+      <li v-t="'aboutPage.strengthPage.loli'"></li>
     </ul>
     <p>&nbsp;</p>
-    <p><router-link to="/about">back</router-link></p>
+    <p><router-link to="/about" v-t="'general.back'"></router-link></p>
   </div>
 </template>
 

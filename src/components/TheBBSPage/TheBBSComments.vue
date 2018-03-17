@@ -7,7 +7,7 @@
             [{{ comments.length - index }}]
             <strong>{{ comment.subject }}</strong>
             <!-- eslint-disable-next-line -->
-            　Posted by: <span class="name">{{ comment.name }}</span>　
+            　{{ $t('bbsPage.postedBy') }}<span class="name">{{ comment.name }}</span>　
             {{ comment.date }}
             <br><br>
             <div v-html="comment.comment"></div>

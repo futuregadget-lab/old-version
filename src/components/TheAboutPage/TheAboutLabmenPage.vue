@@ -1,15 +1,15 @@
 <template>
   <div class="labmen-page">
     <p>The True LaboratoryMembers</p>
-    <p class="title"><strong>True name's of those chosen</strong></p>
-    <p>~I are, we be, RABOMEN~</p>
+    <p class="title"><strong v-t="'aboutPage.labmenPage.title'"></strong></p>
+    <p v-t="'aboutPage.labmenPage.subtitle'"></p>
     <p>&nbsp;</p>
     <div v-for="labmen in laboratoryMembers" :key="labmen.number">
-      <p class="labmen-title" v-bind:class="{ hidden: labmen.hidden }">RABOMEN No.{{ labmen.number }} {{ labmen.name }}</p>
+      <p class="labmen-title" v-bind:class="{ hidden: labmen.hidden }">{{ $t('aboutPage.labmenPage.labmen') }} {{ $t('aboutPage.labmenPage.number', { number: labmen.number }) }} {{ labmen.name }}</p>
       <p v-html="replaceBreakLine(labmen.description)" v-bind:class="{ hidden: labmen.hidden }"></p>
     </div>
     <p>&nbsp;</p>
-    <p><router-link to="/about">back</router-link></p>
+    <p><router-link to="/about" v-t="'general.back'"></router-link></p>
   </div>
 </template>
 

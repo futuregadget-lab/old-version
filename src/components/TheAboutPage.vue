@@ -1,13 +1,13 @@
 <template>
   <div class="about-page">
-    <p class="title"><strong>About Lab</strong></p>
-    <p>~Vanishment this world like nightmares is our objective us fugitives of eternity~</p>
+    <p class="title"><strong v-t="'aboutPage.title'"></strong></p>
+    <p v-t="'aboutPage.subtitle'"></p>
     <p></p>
-    <p><router-link to="/about/road">Road of procure the chaotic</router-link></p>
-    <p><router-link to="/about/labmen">True name's of those chosen</router-link></p>
-    <p><router-link to="/about/strength">Want the strength?</router-link></p>
+    <p><router-link to="/about/road" v-t="'aboutPage.roadPage.title'"></router-link></p>
+    <p><router-link to="/about/labmen" v-t="'aboutPage.labmenPage.title'"></router-link></p>
+    <p><router-link to="/about/strength" v-t="'aboutPage.strengthPage.title'"></router-link></p>
     <p>&nbsp;</p>
-    <p><router-link to="/about/disclaimer">about site</router-link></p>
+    <p><router-link to="/about/disclaimer" v-t="'aboutPage.aboutSitePage.title'"></router-link></p>
   </div>
 </template>
 
