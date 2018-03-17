@@ -1,5 +1,7 @@
 # Mirai Gadget Lab
 
+![Travis](https://img.shields.io/travis/alessandrojean/mirai-gadget-lab.svg?style=flat-square)
+
 An attempt to rebuild the website of Mirai Gadget Lab from Steins;Gate using Vue.js.
 
 > This website was created originally as part of the marketing campaing for the
