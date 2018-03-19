@@ -47,8 +47,35 @@ export default {
     labmenPage: {
       title: 'True name\'s of those chosen',
       subtitle: '~I are, we be, RABOMEN~',
-      number: 'No.{number}',
-      labmen: 'RABOMEN'
+      labmenTitle: 'RABOMEN No.{number} {name}',
+      laboratoryMembers: [
+        {
+          number: '001',
+          name: 'Hououin Kyouma',
+          description: 'And the founder of the Future Gadget Laboratory, mad scientist of madness.<br>' +
+            'Devotion of research to bring world chaos and avoiding of attack by "Organization"!'
+        }, {
+          number: '002',
+          name: 'Mayushii☆',
+          description: 'Liking of bananas and juicy chickens number one, chief of lab\'s "making costumes (for womens only)" division.<br>' +
+            'Makes an eating of somethings many times. Special ability "stardust handshake" owner.'
+        }, {
+          number: '003',
+          name: 'Daru',
+          description: 'It is SUPAHAKA that specializes in infiltration to any information network.<br>' +
+            'Precious power of Hououin Kyouma\'s favorite right hand. However a perv.'
+        }, {
+          number: '004',
+          name: '',
+          description: 'Hope to finally getting of cute girl...',
+          hidden: true
+        }, {
+          number: '65535',
+          name: '',
+          description: 'Just put many here',
+          hidden: true
+        }
+      ]
     },
     strengthPage: {
       title: 'Want the strength?',

@@ -4,9 +4,9 @@
     <p class="title"><strong v-t="'aboutPage.labmenPage.title'"></strong></p>
     <p v-t="'aboutPage.labmenPage.subtitle'"></p>
     <p>&nbsp;</p>
-    <div v-for="labmen in laboratoryMembers" :key="labmen.number">
-      <p class="labmen-title" v-bind:class="{ hidden: labmen.hidden }">{{ $t('aboutPage.labmenPage.labmen') }} {{ $t('aboutPage.labmenPage.number', { number: labmen.number }) }} {{ labmen.name }}</p>
-      <p v-html="replaceBreakLine(labmen.description)" v-bind:class="{ hidden: labmen.hidden }"></p>
+    <div v-for="labmen in $t('aboutPage.labmenPage.laboratoryMembers')" :key="labmen.number">
+      <p class="labmen-title" v-bind:class="{ hidden: labmen.hidden }">{{ $t('aboutPage.labmenPage.labmenTitle', { number: labmen.number, name: labmen.name }) }}</p>
+      <p v-html="labmen.description" v-bind:class="{ hidden: labmen.hidden }"></p>
     </div>
     <p>&nbsp;</p>
     <p><router-link to="/about" v-t="'general.back'"></router-link></p>
@@ -17,41 +17,7 @@
 export default {
   name: 'TheAboutLabmenPage',
   data () {
-    return {
-      laboratoryMembers: [
-        {
-          number: '001',
-          name: 'Hououin Kyouma',
-          description: 'And the founder of the Future Gadget Laboratory, mad scientist of madness.\n' +
-            'Devotion of research to bring world chaos and avoiding of attack by "Organization"!'
-        }, {
-          number: '002',
-          name: 'Mayushii☆',
-          description: 'Liking of bananas and juicy chickens number one, chief of lab\'s "making costumes (for womens only)" division.\n' +
-            'Makes an eating of somethings many times. Special ability "stardust handshake" owner.'
-        }, {
-          number: '003',
-          name: 'Daru',
-          description: 'It is SUPAHAKA that specializes in infiltration to any information network.\n' +
-            'Precious power of Hououin Kyouma\'s favorite right hand. However a perv.'
-        }, {
-          number: '004',
-          name: '',
-          description: 'Hope to finally getting of cute girl...',
-          hidden: true
-        }, {
-          number: '65535',
-          name: '',
-          description: 'Just put many here',
-          hidden: true
-        }
-      ]
-    }
-  },
-  methods: {
-    replaceBreakLine (description) {
-      return description.replace('\n', '<br>')
-    }
+    return {}
   }
 }
 </script>

@@ -1,6 +1,6 @@
 export default {
   general: {
-    title: '無題ドキュメント'
+    title: '未来ガジェット研究所'
   },
   topPage: {
     visitor: 'あなたは {counter}の訪問者です',
@@ -47,8 +47,38 @@ export default {
     labmenPage: {
       title: '選ばれし者の真名',
       subtitle: '～俺が、俺たちが、ラボメンだ～',
-      number: '№{number}',
-      labmen: 'ラボメン'
+      labmenTitle: 'ラボメン№{number}　{name}',
+      laboratoryMembers: [
+        {
+          number: '001',
+          name: '鳳凰院凶真',
+          description: `
+            未来ガジェット研究所の創設者にして、狂気のマッドサイエンティスト。<br>
+            "機関"からの攻撃を掻い潜り、今日も世界に混沌をもたらすための研究に没頭する！`
+        }, {
+          number: '002',
+          name: 'まゆしぃ☆',
+          description: `
+            バナナとジューシーからあげナンバーワンが好物な、ラボの"コス作り（女性用限定）担当"<br>
+            頻繁に何か食べている。特殊能力「スターダスト・シェイクハンド」の持ち主。`
+        }, {
+          number: '003',
+          name: 'ダル',
+          description: `
+            あらゆる情報ネットワークへの潜入を得意とするスーパーハカーであり、<br>
+            鳳凰院凶真のフェイバリット・ライトハンドたるラボの貴重な戦力。ただし変態。`
+        }, {
+          number: '004',
+          name: '',
+          description: 'そろそろ、かわいい女子がこないかなー。',
+          hidden: true
+        }, {
+          number: '65535',
+          name: '',
+          description: 'ダルいから何個かつくっておくお。',
+          hidden: true
+        }
+      ]
     },
     strengthPage: {
       title: '力が欲しいか？',
