@@ -1,8 +1,8 @@
-# Mirai Gadget Lab
+# Future Gadget Lab (old version)
 
 ![Travis][travis]
 
-An attempt to rebuild the website of [Mirai Gadget Lab] from Steins;Gate using Vue.js.
+An attempt to rebuild the website of [Future Gadget Lab] from Steins;Gate using Vue.js.
 
 > This website was created originally as part of the marketing campaing for the
 > anime adaptation of Steins;Gate. The page was written by Okabe Rintarou and
@@ -14,9 +14,9 @@ An attempt to rebuild the website of [Mirai Gadget Lab] from Steins;Gate using V
 
 This version is available online [here].
 
-[Mirai Gadget Lab]: http://futuregadget-lab.us/
-[here]: https://alessandrojean.github.io/mirai-gadget-lab/
-[travis]: https://img.shields.io/travis/alessandrojean/mirai-gadget-lab.svg?style=flat-square
+[Future Gadget Lab]: http://futuregadget-lab.us/
+[here]: https://futuregadget-lab.github.io/old-version/
+[travis]: https://img.shields.io/travis/futuregadget-lab/old-version.svg?style=flat-square
 
 ## Differences
 
