@@ -1,18 +1,16 @@
 <template>
   <div class="bbs-pass">
-    <p>Phoenix BBS Admin Page</p>
+    <p v-t="'bbsPage.adminPage.title'"></p>
     <hr>
-    <p>[<router-link to="/">Return the Top</router-link>]</p>
+    <p>[<router-link to="/" v-t="'bbsPage.returnTop'"></router-link>]</p>
     <hr>
-    <p>Please entering of password.</p>
+    <p v-t="'bbsPage.adminPage.passwordAsking'"></p>
     <p>
       <input name="password1" id="password1" type="password">
-      <input name="Verification" value="Authenticate" type="button">
+      <input name="Verification" :value="$t('bbsPage.adminPage.authenticate')" type="button">
     </p>
     <p>&nbsp;</p>
-    <p>
-      To RABOMEN: Any fellow who forgetting of password look on paper on left back of the stage on the refrigerator. Put back if look!
-    </p>
+    <p v-t="'bbsPage.adminPage.note'"></p>
     <hr>
   </div>
 </template>
