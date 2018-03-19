@@ -33,7 +33,7 @@
     </i18n>
     <p>&nbsp;</p>
     <i18n path="topPage.language" tag="p">
-      <select v-model="selectedLanguage" @change="changeLanguage">
+      <select v-model="selectedLanguage">
         <option v-for="lang in languages" :key="lang.label" :value="lang.label">{{ lang.name }}</option>
       </select>
     </i18n>
@@ -49,15 +49,19 @@ export default {
       languages: [
         { name: 'English', label: 'en' },
         { name: '日本語', label: 'jp' }
-      ],
-      selectedLanguage: 'en'
+      ]
     }
   },
-  methods: {
-    changeLanguage (event) {
-      this.$i18n.locale = this.selectedLanguage
-      document.querySelector('html').setAttribute('lang', this.selectedLanguage)
-      document.title = this.$t('general.title')
+  computed: {
+    selectedLanguage: {
+      get: function () {
+        return this.$i18n.locale
+      },
+      set: function (newValue) {
+        this.$i18n.locale = newValue
+        document.querySelector('html').setAttribute('lang', newValue)
+        document.title = this.$t('general.title')
+      }
     }
   }
 }
